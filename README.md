@@ -1,5 +1,5 @@
 # sphttp-proxy
-Proxy sample of [sphttp](https://github.com/johejo/sphttp)
+Proxy sample of [sphttp](https://github.com/johejo/sphttp) proxy
 [docker hub](https://hub.docker.com/r/johejo/sphttp-proxy/)
 
 ## Usage
