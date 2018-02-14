@@ -1,6 +1,6 @@
 from flask import Flask, Response, request
 
-from sphttp.downloader import Downloader
+from sphttp import Downloader
 
 app = Flask(__name__)
 
@@ -12,6 +12,7 @@ def proxy():
     d = Downloader(urls=hosts)
     gen = d.generator()
     return Response(gen, mimetype='application/octet-stream')
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True, port=8080)
